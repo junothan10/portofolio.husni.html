@@ -1,0 +1,725 @@
+/* Import Font Poppins */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #fff; /* Warna background navbar */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Container untuk memastikan navbar presisi */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px; /* Batasi lebar agar tidak terlalu pinggir */
+    margin: 0 auto;
+    padding: 0 20px; /* Tambahkan padding agar lebih seimbang */
+}
+
+/* Styling bagian kiri navbar */
+.nav-left {
+    display: flex;
+    gap: 20px;
+}
+
+/* Styling untuk link */
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #53a5ba; /* Warna saat hover */
+}
+
+/* Styling bagian kanan navbar */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Styling untuk logo */
+.nav-logo {
+    width: 35px; /* Sesuaikan ukuran logo */
+    height: auto;
+}
+  
+/* Styling untuk username */
+nav span {
+    font-weight: 600; /* Poppins lebih tegas */
+    color: #53a5ba;
+    font-size: 16px;
+}
+
+/* Styling Hero Section buat home !!!!!!!!!!!!*/
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px; /* Sesuaikan agar tidak tertutup navbar */
+    padding: 50px 0;
+}
+
+/* Container agar sejajar dengan navbar */
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px; /* Sesuaikan dengan navbar */
+    margin: 0 auto;
+    padding: 0 20px; /* Padding kiri & kanan agar sesuai navbar */
+}
+
+/* Bagian kiri (Gambar) */
+.hero-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image {
+    width: 330px; /* Lebih ramping */
+    height: 400px; /* Tinggi tetap */
+    object-fit: cover;
+    border-radius: 20px; /* Tumpulkan sudut gambar */
+}
+
+
+
+/* Bagian kanan (Teks) */
+.hero-right {
+    width: 50%;
+}
+
+.hero-right h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+}
+
+.hero-right h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+}
+
+.hero-right p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Styling Tombol */
+.hero-btn {
+    background-color: #53a5ba;
+    color: white;
+    padding: 8px 16px; /* Kurangi padding agar tombol lebih kecil */
+    font-size: 14px; /* Kurangi ukuran font */
+    font-weight: 600;
+    border: none;
+    border-radius: 4px; /* Kurangi tumpulannya */
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.3s;
+}
+.hero-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Styling Stats */
+.hero-stats {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 15px;
+}
+
+/* Container statistik */
+.hero-stats {
+    display: flex;
+    gap: 8px; /* Mengurangi jarak antar kotak */
+    margin-top: 15px;
+}
+/* Kotak statistik lebih kecil & lebih lebar */
+.stat-box {
+    background: #53a5ba;
+    padding: 4px 10px; /* Sedikit lebih lebar */
+    text-align: center;
+    border-radius: 4px; /* Kurangi tumpulannya */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 90px; /* Lebarkan sedikit */
+    height: 40px; /* Tetap kecil */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Angka utama lebih kecil */
+.stat-box h3 {
+    font-size: 12px; /* Kurangi ukuran font */
+    font-weight: bold;
+    color: #ffff;
+    margin-bottom: 2px; /* Tambahkan sedikit jarak */
+}
+
+/* Teks kecil lebih ringkas */
+.stat-box p {
+    font-size: 8px; /* Kurangi ukuran font */
+    color: #ffff;
+    font-weight: 500;
+    line-height: 9px; /* Sesuaikan jarak antar teks */
+}
+
+..hero-about-wrapper {
+  background-color: #e0e0e0; /* Abu-abu muda */
+  padding: 50px 0; /* Tambahkan padding agar lebih jelas */
+}
+
+
+
+/* About Me Section (bagian section about me!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)*/ 
+#about {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    background-color: #f9f9f9; /* Warna background opsional */
+}
+
+/* Container agar sejajar dengan navbar */
+.about-container {
+    max-width: 1200px; /* Sama dengan navbar */
+    margin: 0 auto;
+    padding: 0 20px; /* Padding kiri & kanan agar sesuai */
+    text-align: center;
+}
+
+/* Judul */
+.about-container h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Konten About Me */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Styling Gambar */
+.about-image {
+    width: 300px;
+    border-radius: 10px; /* Opsional: Tambahkan sudut rounded */
+    background-image: #B6EEFB;
+}
+
+/* Bagian teks */
+.about-text {
+    width: 60%;
+    text-align: left;
+}
+
+/* Sosmed */
+.about-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    justify-content: center;
+    position: relative;
+    right: -10px; /* Sedikit ke kiri dari sebelumnya */
+}
+
+.about-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #53a5ba;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.about-links a:hover {
+    background-color: #0056b3;
+}
+
+.about-links a i {
+    font-size: 20px;
+    color: white;
+}
+
+
+/* Ukuran ikon di dalam */
+.about-links a i {
+    font-size: 20px;
+    color: white;
+}
+
+
+
+/* Styling Tombol */
+.about-btn {
+    background-color: #53a5ba;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.about-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Wrapper untuk background abu-abu yang mencakup Home dan About */
+.hero-about-wrapper {
+    background-color: #d6d6d6; /* Warna abu-abu */
+    padding: 60px 0; /* Beri padding agar tidak terlalu rapat */
+}
+
+/* Pastikan section About juga ikut terpengaruh */
+#about {
+    background-color: inherit; /* Menggunakan warna dari parent */
+    padding: 50px 0;
+}
+
+.about-container {
+    background-color: white; /* Latar belakang putih */
+    padding: 40px; /* Ruang di dalam kotak */
+    border-radius: 15px; /* Sudut tumpul */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    max-width: 900px; /* Lebar maksimum agar tetap rapi */
+    margin: 0 auto; /* Tengah secara horizontal */
+}
+
+.about-container {
+    background-color: white; /* Latar belakang putih */
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Jarak antara teks & gambar */
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+}
+
+
+/* untuk expertise */
+#service {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    background: #f8f9fa;
+    gap: 50px;
+  }
+  
+  .service-content {
+    flex: 1;
+  }
+  
+  .service-content h2 {
+    font-size: 32px;
+    color: #1d1e25;
+    margin-bottom: 20px;
+  }
+  
+  .service-content p {
+    max-width: 500px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .service-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex: 1;
+  }
+  
+  .service-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-box .icon {
+    width: 40px;
+    height: 40px;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .service-box .icon img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .service-box h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .service-box p {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+  }
+  
+
+  /* untuk my expertise */
+  /* Container utama */
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  background: #f8f9fa;
+  gap: 50px;
+}
+
+/* Bagian kiri (Why Hire Me) */
+.left-content {
+  flex: 1;
+  max-width: 400px;
+}
+
+.left-content h2 {
+  font-size: 28px;
+  color: #1d1e25;
+  margin-bottom: 15px;
+}
+
+.left-content p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Button Testimonial */
+button {
+  background-color: #53a5ba;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Bagian kanan (kotak skill) */
+.right-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.skill-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #53a5ba;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skill-box strong {
+  font-size: 18px;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.skill-box p {
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* untuk testimonial */
+/* Container Testimonial */
+#testimonial {
+    background: #cfcfcf; /* Warna abu-abu muda */
+    padding: 80px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Judul Testimonial */
+  #testimonial h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Container untuk daftar testimonial */
+  .testimonial-container {
+    max-width: 800px;
+    text-align: left;
+  }
+  
+  /* Setiap paragraf testimonial */
+  .testimonial-container p {
+    font-size: 16px;
+    color: #333;
+    background: transparent;
+    padding: 10px 20px;
+    border-left: 3px solid #333; /* Garis vertikal di sisi kiri */
+    margin-bottom: 15px;
+    line-height: 1.6;
+    position: relative;
+  }
+  
+  /* Simbol titik-tengah seperti di gambar */
+  .testimonial-container p::before {
+    content: "◉";
+    color: #333;
+    font-size: 12px;
+    position: absolute;
+    left: -15px;
+    top: 5px;
+  }
+  
+  /* Garis horizontal kecil di bawah testimonial */
+  .testimonial-divider {
+    width: 40px;
+    height: 5px;
+    background: #333;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  /* untuk pricing */
+
+/* Container utama */
+#pricing {
+    background: #f5f5f5;
+    padding: 80px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Wrapper untuk form dan contact info */
+  .pricing-container {
+    display: flex;
+    background: #fff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 40px;
+  }
+  
+  /* Form di sebelah kiri */
+  .form-container {
+    flex: 1;
+    padding-right: 40px;
+  }
+  
+  .form-container h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  /* Styling input dan textarea */
+  .form-container input,
+  .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .form-container textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  /* Tombol submit */
+  .form-container button {
+    background: #1b82d8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .form-container button:hover {
+    background: #1469b1;
+  }
+  
+  /* Contact info di sebelah kanan */
+  .contact-container {
+    flex: 1;
+    padding-left: 40px;
+  }
+  
+  .contact-container h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0a2239;
+    margin-bottom: 20px;
+  }
+  
+  /* Kotak kecil untuk alamat dan kontak */
+  .contact-info {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-info i {
+    font-size: 20px;
+    color: #1b82d8;
+    margin-right: 15px;
+  }
+  
+  /* Styling ikon sosial media */
+  .social-icons {
+    margin-top: 15px;
+    display: flex;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #1b82d8;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: 0.3s;
+  }
+  
+  .social-icons a:hover {
+    background: #1469b1;
+  }
+  
+  /* Footer */
+footer {
+  background: #1b2a41; /* Warna background footer */
+  color: #ffffff; /* Warna teks */
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Copyright Text */
+footer p:first-child {
+  flex: 1;
+  text-align: left;
+  margin-left: 20px;
+}
+
+/* Navigasi Footer */
+footer p:last-child {
+  flex: 1;
+  text-align: center;
+}
+
+/* Link di Footer */
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #1b82d8; /* Warna saat dihover */
+}
+
+/* Logo dan Nama di Footer */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.footer-logo img {
+  width: 40px; /* Ukuran logo */
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.footer-logo span {
+  font-size: 16px;
+  font-weight: bold;
+}
