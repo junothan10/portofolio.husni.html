@@ -764,3 +764,13 @@ footer a:hover {
   opacity: 1;
   transform: translateY(0);
 }
+
+input.error, textarea.error {
+  border: 2px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
